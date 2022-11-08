@@ -101,20 +101,18 @@ node index.js or nodemon index.js
 - [x] create a new user 
 ```json
 {
-  "firstName": "John",
-  "lastName": "Smith",
-  "username": "JohnDoe",
-  "bio": "cool cat",
-  "gender": "male",
-  "email": "johnny@example.com,
-  "password": "myverystrongpassword"
+  "firstname": "Mary",
+  "lastname": "Martha",
+  "username": "user3",
+  "email": "user3@sample.com,
+  "password": "abcdefghi"
 }
 ```
 - [x] Log into the application
 
 ```json
 {
-  "email": "johnny@example.com,
+  "username": "user3",
   "password": "myverystrongpassword"
 }
 ```
@@ -123,10 +121,10 @@ node index.js or nodemon index.js
 
 ```json
 {
-    title: "my new blog",
-    "description": "Trying out blogging",
+    title: "A new day",
+    "description": "A blog app",
     "body": "lorem ipsum lorem ipsum lorem ipsum, lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-    tags: ["first", "lorem", "new"]
+    tags: ["cars", "fruits", "vegs"]
  }
 ```
     
