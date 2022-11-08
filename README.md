@@ -57,20 +57,6 @@ Blog/Article
 - body is required
 - timestamp
 
-
-### Installation
-------
-
-To run this project,
-
-1. fork this repo
-2. clone the repo to your local machine
-3. Open th folder in your favourite text editor
-4. cd into the directory where the project is located.
-5. install it locally using npm:
-
-`$ npm install`
-
 ```
 node index.js or nodemon index.js
 ```
@@ -81,18 +67,16 @@ node index.js or nodemon index.js
 
 | S.no   | route            | Method |  Access       | Description  |
 | :---   |    :----        | ---:   |   :---:        |   :---        |
-| 1      | "/signup"        | POST   | PRIVATE       |     create a new user      |
-| 2      | "/login"         | POST   | PRIVATE       |      log in to the app   |
-| 3      | "/blogs"         | POST   | PRIVATE       |  post a new Blog           |
-| 4      | "/blogs"         | GET    | PUBLIC        |    get all published blogs on the app   |
-| 5      | "/blogs/published"| GET   | PRIVATE       |   get published Blogs by current user   |
-| 6      | "/blogs/draft    | GET    | PRIVATE       |  get all blogs in draft for current user  |
-| 7      | "/blogs/:id      | GET    | PUBLIC        |  get Blog By Id |
-| 8      | "/blogs/:id"     | DELETE | PRIVATE       |  delete Blog By Id     |
-| 9      | "/blogs/user/articles"| GET |PRIVATE      |  get All Blogs By current user   |
-| 10     | "/blogs/update/:id| PATCH | PRIVATE       | update Blog By Id
-| 11     | "/blogs/tags/:tags"| GET   | PRIVATE      |   get Blogs by Tags    |
-| 12     | "/blogs/title/:title"| GET| PRIVATE       |      get blogs by Title |
+| 1      | "/api/auth/register"        | POST   | PRIVATE       |     create a new user      |
+| 2      | "/api/auth/login"         | POST   | PRIVATE       |      log in to the app   |
+| 3      | "/api/posts"         | POST   | PRIVATE       |  create new post           |
+| 4      | "/api/pubPosts"         | GET    | PUBLIC        |    get all published posts on the app   |
+| 6      | "/api/posts    | GET    | PRIVATE       |  get all posts  |
+| 7      | "/posts/:id      | GET    | PUBLIC        |  get post By Id |
+| 8      | "/posts/:id"     | DELETE | PRIVATE       |  delete post By Id     |
+| 10     | "/posts/:id   | PUT | PRIVATE       | update post By Id
+| 11     | "/api/posts?tag=:id"| GET   | PRIVATE      |   get posts by Tags    |
+| 12     | "/api/posts?title=a title"| GET| PRIVATE       |      get posts by Title |
 
 
 ### Here is a guide to using the application.
